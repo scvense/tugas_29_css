@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Belajar CSS - Niomic</title>
+    <link rel="stylesheet" type="text/css" href="semantic.min.css" />
+    <script src="semantic.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.7/components/icon.min.css"
+    />
+    <style>
+      body {
+        background-color: gainsboro;
+      }
+      .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 500px;
+        width: 600px;
+        margin: 50px 30% 0 30%;
+      }
+      .container {
+        background-color: white;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        height: 330px;
+        width: 450px;
+        border-radius: 5px;
+      }
+      .img {
+        width: 350px;
+      }
+      .span {
+        color: teal;
+        font-size: 20px;
+      }
+      .image {
+        width: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="img">
+        <img class="ui middle aligned image" src="niomic.png" />
+        &ensp;&nbsp;
+        <span class="span"><b>Daftar Akun NIOMIC</b></span>
+      </div>
+      <br />
+      <div class="container">
+        <form class="ui form">
+          <div class="field">
+            <div class="ui left icon input">
+              <input type="text" placeholder="Nama Depan" />
+              <i class="user icon"></i>
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui left icon input">
+              <input type="text" name="last-name" placeholder="Nama Belakang" />
+              <i class="user icon"></i>
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui left icon input">
+              <input type="number" name="number" placeholder="No. Telp / HP" />
+              <i class="user icon"></i>
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui left icon input">
+              <input type="email" name="email" placeholder="Alamat Email" />
+              <i class="user icon"></i>
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui left icon input">
+              <input type="password" name="password" placeholder="Password" />
+              <i class="lock icon"></i>
+            </div>
+          </div>
+          <button class="fluid ui teal button">Login</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
